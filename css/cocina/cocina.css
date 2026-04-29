@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff7ed;
+}
+
+.panel-cocina {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.barra-cocina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-cocina {
+  display: grid;
+  gap: 10px;
+  max-width: 360px;
+}
