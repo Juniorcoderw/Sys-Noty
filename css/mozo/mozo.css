@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ecfeff;
+}
+
+.panel-mozo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.barra-mozo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lista-alertas {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.lista-alertas li {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+}

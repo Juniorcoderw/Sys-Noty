@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotiFast - Admin</title>
+  <link rel="stylesheet" href="../css/admin/admin.css">
+</head>
+<body>
+  <main class="panel-admin">
+    <header class="barra-admin">
+      <h1>Panel Admin</h1>
+      <button id="btn-salir">Salir</button>
+    </header>
+
+    <section class="seccion-admin">
+      <h2>Crear usuario</h2>
+      <form id="form-usuario" class="form-admin">
+        <input id="nombre-usr" type="text" placeholder="Nombre" required>
+        <input id="correo-usr" type="email" placeholder="Correo" required>
+        <select id="rol-usr" required>
+          <option value="">Rol</option>
+          <option value="cocina">Cocina</option>
+          <option value="mozo">Mozo</option>
+          <option value="barra">Barra</option>
+          <option value="caja">Caja</option>
+        </select>
+        <button id="btn-crear" type="submit">Guardar</button>
+      </form>
+      <p id="estado-admin"></p>
+    </section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
+  <script src="../js/admin/admin.js"></script>
+</body>
+</html>

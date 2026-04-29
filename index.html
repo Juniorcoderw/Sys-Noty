@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotiFast - Login</title>
+  <link rel="stylesheet" href="css/login/login.css">
+</head>
+<body>
+  <main class="panel-login">
+    <h1 class="titulo-login">NotiFast</h1>
+    <p class="texto-login">Ingreso al sistema</p>
+
+    <form id="form-login" class="form-login">
+      <label for="correo-login">Correo</label>
+      <input id="correo-login" type="email" required>
+
+      <label for="clave-login">Clave</label>
+      <input id="clave-login" type="password" required>
+
+      <button id="btn-ingresar" type="submit">Ingresar</button>
+    </form>
+
+    <p id="estado-login" class="estado-login"></p>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
+  <script src="js/login/login.js"></script>
+</body>
+</html>

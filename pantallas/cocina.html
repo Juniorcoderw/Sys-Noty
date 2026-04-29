@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotiFast - Cocina</title>
+  <link rel="stylesheet" href="../css/cocina/cocina.css">
+</head>
+<body>
+  <main class="panel-cocina">
+    <header class="barra-cocina">
+      <h1>Cocina</h1>
+      <button id="btn-salir">Salir</button>
+    </header>
+
+    <section class="seccion-cocina">
+      <h2>Enviar alerta</h2>
+      <form id="form-alerta" class="form-cocina">
+        <input id="mozo-id" type="text" placeholder="Mozo ID" required>
+        <input id="alerta-txt" type="text" placeholder="Detalle" required>
+        <button id="btn-llamar" type="submit">Llamar mozo</button>
+      </form>
+      <p id="estado-cocina"></p>
+    </section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
+  <script src="../js/cocina/cocina.js"></script>
+</body>
+</html>
